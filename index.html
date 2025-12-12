@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoGuIT - Solusi Guru Digital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">
+                <i class="fas fa-cloud me-2"></i>SoGuIT
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Produk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimoni</a></li>
+                </ul>
+                <a id="nav-cta" href="#" class="btn btn-primary ms-3 rounded-pill px-4">Hubungi Kami</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero-section d-flex align-items-center text-white">
+        <div class="overlay"></div>
+        <div class="container position-relative z-2">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div id="hero-loader" class="spinner-border text-light" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    
+                    <h1 class="display-4 fw-bold mb-3" id="hero-title"></h1>
+                    <p class="lead mb-4" id="hero-desc"></p>
+                    <a href="#" id="hero-cta" class="btn btn-light text-primary btn-lg rounded-pill px-5 shadow fw-bold">Konsultasi Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded shadow-sm h-100">
+                        <i class="fas fa-server fa-3x text-primary mb-3"></i>
+                        <h5 class="fw-bold">Serverless</h5>
+                        <p class="text-muted">Tanpa biaya sewa server bulanan. Hemat anggaran sekolah.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded shadow-sm h-100">
+                        <i class="fab fa-google fa-3x text-success mb-3"></i>
+                        <h5 class="fw-bold">Google Ecosystem</h5>
+                        <p class="text-muted">Terintegrasi penuh dengan Google Workspace for Education.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-light rounded shadow-sm h-100">
+                        <i class="fas fa-bolt fa-3x text-warning mb-3"></i>
+                        <h5 class="fw-bold">Fast & Easy</h5>
+                        <p class="text-muted">Mudah digunakan guru senior, secepat chat WhatsApp.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">The Arsenal</h2>
+                <p class="text-muted">Ekosistem Digital Terintegrasi Siap Pakai</p>
+            </div>
+            
+            <div id="product-loader" class="text-center">
+                <div class="spinner-border text-primary" role="status"></div>
+                <p>Memuat Katalog...</p>
+            </div>
+
+            <div class="row g-4" id="product-list">
+                </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Kata Mereka</h2>
+                <p class="text-muted">Bukti nyata dari sekolah yang telah bertransformasi</p>
+            </div>
+            <div class="row justify-content-center" id="testimonial-list">
+                </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2025 SoGuIT. All Rights Reserved.</p>
+            <p class="small text-white-50" id="footer-contact">Loading contact...</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
